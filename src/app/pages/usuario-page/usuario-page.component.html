@@ -1,0 +1,20 @@
+<div id="container" >
+    <div id="header-container">
+        <mat-card-title>Usuarios</mat-card-title>
+    </div>
+
+    <div id="header-search">
+ 
+        <mat-form-field class="field-container" appearance="fill">
+          <mat-label for="search">Buscar</mat-label>
+          <input matInput id="search" placeholder="Buscar" [(ngModel)]="search"> 
+            </mat-form-field>
+            <button (click)="goToSearch()"  mat-raised-button color="primary">Buscar</button> 
+        </div>
+
+
+    <app-usuario-list [dataSourceUsuario]="usuarios"></app-usuario-list>
+
+    
+</div>
+
